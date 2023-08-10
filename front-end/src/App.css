@@ -1,0 +1,369 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition: all 0.4s; */
+  font-family: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Navbar section */
+
+.nav{
+  width: 100%;
+  height: 8.5vh;
+  line-height: 65px;
+  text-align: center;
+  background-color: rgb(77, 77, 78);
+}
+
+.nav div.logo{
+  width: 20%;
+  height: 65px;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.nav div.logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.logo-img{
+  width: 120px;
+  mix-blend-mode: color;
+  scale: 2;
+}
+
+.nav div.logo a:hover {
+  color: #c0c0c0;
+}
+
+.nav div.main_list{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav div.main_list .ul-auth{
+  width:50%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav div.main_list .ul-noauth{
+  width:25%;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+
+}
+
+.nav div.main_list ul li{
+  height: 65px;
+  display: flex;
+}
+
+.nav div.main_list ul li a{
+  text-decoration: none;
+  color: #fff;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+  color: #c0c0c0;
+}
+
+.nav div.media_button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: none;
+}
+
+.nav div.media_button button.main_media_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+  width: 98%;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+  transform: rotateY(180deg);
+  transition: all 0.5s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+  transform: rotateY(180deg);
+  transition: all 0.4s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+  transform: rotateY(180deg);
+  transition: all 0.3s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+  display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -20deg);
+}
+
+/* Home section */
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .container{
+      margin: 0;
+  }
+  
+}
+
+
+
+
+@media screen and (max-width:768px) {
+  
+  .container{
+      margin: 0;
+  }
+  
+  .nav div.logo{
+      margin-left: 15px;
+  }
+  
+  .nav div.main_list{
+      width: 100%;
+      margin-top: 65px;
+      height: 0px;
+      overflow: hidden;
+  }
+  
+  .nav div.show_list{
+      height: 200px;
+  }
+  
+  .nav div.main_list ul{
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      top: 80px;
+      right: 0;
+      left: 0;
+  }
+  
+  .nav div.main_list ul li{
+      width: 100%;
+      height: 40px;
+      background-color:rgb(77, 77, 78);
+  }
+  
+  .nav div.main_list ul li a{
+    text-align: center;
+      line-height: 40px;
+      width: 100%;
+      height: 40px;
+      display: table;
+  }
+  
+  .nav div.media_button{
+      display: block;
+  }
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 8.5vh;
+  color: white;
+  background: rgb(77, 77, 78);
+}
+.input-signup-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+}
+
+.input-signup-container p{
+color: red;
+font-size: 70%;
+width: 60%;
+height: 10%;
+}
+.input-signup{
+  appearance: none;
+	border: none;
+	outline: none;
+  width: 60%;
+	border-bottom: .2em solid rgb(77, 77, 78);
+  background: transparent;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: rgb(77, 77, 78);
+  height: 50%;
+}
+
+.sign-up-form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 83vh;
+  gap: 8%;
+  padding: 4% 0;
+  background: lightblue;
+}
+
+
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 6%;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 6%;
+}
+
+.form-card-container{
+  width: 40%;
+  padding: 2%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 0, 0, 0.158);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+
+
+
+.btn-signup{
+padding: 1% 4%;
+background: rgb(77, 77, 78);
+color: white;
+border: 0;
+outline: 0;
+cursor: pointer;
+}
+
+.btn-login{
+  padding: 1% 4%;
+  background: rgb(77, 77, 78);
+  color: white;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 10%;
+  }
+
+  .product-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .products li{
+    border: 1px solid rgb(77, 77, 78);
+    width: 20%;
+    text-align: center;
+  }
